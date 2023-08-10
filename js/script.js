@@ -27,7 +27,6 @@ const playGame = function(playerInput){
         }
     }
 
-    {
     const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
@@ -43,10 +42,9 @@ const playGame = function(playerInput){
     printMessage('Twój ruch to: ' + playerMove);
 
     displayResult(computerMove, playerMove);
-    }
+    
 }
 
-{
 const playRock = document.getElementById('play-rock');
 const playPaper = document.getElementById('play-paper');
 const playScissors = document.getElementById('play-scissors');
@@ -60,6 +58,5 @@ playPaper.addEventListener('click', function(){
 playScissors.addEventListener('click', function(){
     playGame(3);
 });
-}
 
 }
